@@ -1,0 +1,21 @@
+# action.yml
+name: 'kustomize'
+description: 'Run kustomize commands'
+inputs:
+  path:
+    description: 'Path to the kustomization directory to the commands from'
+    required: false
+    default: '.'
+  command:
+    description: 'command to run'
+    required: true
+    default: --help
+outputs:
+  stdout: # id of output
+    description: 'captured stdout'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.path }}
+    - ${{ inputs.command }}
