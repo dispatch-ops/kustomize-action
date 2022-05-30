@@ -3,7 +3,7 @@
 set -xo 
 
 # Add kustomize to PATH
-PATH="$(pwd):$PATH"
+PATH="/app:$PATH"
 export PATH
 
 cd "$1" || exit
