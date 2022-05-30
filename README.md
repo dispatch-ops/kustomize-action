@@ -1,4 +1,4 @@
-# Terraform action
+# Kustomize action
 
 A super simple wrapper around the kustomize docker image
 
