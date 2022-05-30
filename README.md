@@ -19,7 +19,7 @@ A super simple wrapper around the kustomize docker image
 ## Example usage
 
 ```
-uses: dispatch-ops/terraform-action@v1
+uses: dispatch-ops/kustomize-action@v1
 with:
   path: 'kustomize/some-app/overlays/staging'
   command: edit set image ${{ steps.build-image.outputs.name }}
