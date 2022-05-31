@@ -7,4 +7,4 @@ PATH="/app:$PATH"
 export PATH
 
 cd "$1" || exit
-kustomize "$2"
+echo "$2" | xargs kustomize
