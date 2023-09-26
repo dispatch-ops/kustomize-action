@@ -1,4 +1,4 @@
-FROM k8s.gcr.io/kustomize/kustomize:v3.8.7
+FROM k8s.gcr.io/kustomize/kustomize:v5.0.1
 
 COPY entrypoint.sh /entrypoint.sh
 
